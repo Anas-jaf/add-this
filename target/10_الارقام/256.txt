@@ -1,1 +1,1 @@
-1  is  the  only  one  0  is  none  11  is  , more  and  10  is  less  100  is  a  lot  but  , 1000  is  even  more  learn  the  numbers  , and  you  should  know  more  1010101  type  , the  key  1  and  next  type  the  key  0
+1 هو الرقم الوحيد و 0 هو لا شيء و 11 هو اكبر من الرقم 10 و هو اقل من 100 و هو اقل من 1000 و هو رقم زوجي و كل ما تعلمت ارقام اكثر ستعرف طباعة 10101010 و المفتاح 1 و المفتاح التالي 0
