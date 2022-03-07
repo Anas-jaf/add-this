@@ -1,5 +1,6 @@
 
 import mysql.connector, time, os
+import re
 
 db_handle = mysql.connector.connect(
     host = 'localhost',
@@ -13,6 +14,12 @@ kursor = db_handle.cursor()
 
 names = []
 texts = []
+
+
+
+# kursor.execute("create database `test`")
+# db_handle.commit()
+
 kursor.execute("use test ;")
 db_handle.commit()
 ########################################
@@ -53,8 +60,11 @@ for x in file_names2:
                 
             # print (f'`{y}`')
             for i in texts:
+      
                 # print(f"INSERT INTO {x} VALUES (\"\" , \'{i}\');")
-                kursor.execute(f"INSERT INTO `{x}` VALUES (\"\" , \'{i}\');") 
+                # kursor.execute(f"INSERT INTO `{x}` VALUES (\"\" , \'{i}\');") 
+                # re.escape(i)
+                kursor.execute(f"INSERT INTO `{x}` VALUES (\'\' , \'{i}\');") 
                 db_handle.commit()
                 # print (i)
             # kursor.execute(f"INSERT INTO `{x}` (text) VALUES ('`{y}`'); " ) 
