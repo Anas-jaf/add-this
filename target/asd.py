@@ -10,6 +10,7 @@ db_handle = mysql.connector.connect(
 print (db_handle)
 
 kursor = db_handle.cursor()
+kursor.execute('drop database translated_files')
 kursor.execute('CREATE DATABASE IF NOT EXISTS translated_files')
 kursor.execute("use translated_files ;")
 db_handle.commit()
